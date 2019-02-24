@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f2de;
+}
+
+.card {
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 40px);
+  background-color: #fff;
+  box-shadow: 0 0 10px #d3d3d3;
+  /*Не получилось избежать наложения теней, не используя костыли*/
+}
+
+.card__number {
+  width: 92px;
+  height: 92px;
+  font-family: "Arial";
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 92px;
+  text-align: center;
+  border: 4px solid #000;
+  border-radius: 50%;
+}
+
+.card_wide,
+.card_narrow {
+  width: 400px;
+}
+
+.card_top {
+  left: 90px;
+}
+
+.card_wide_top {
+  width: 100%;
+  max-width: 960px;
+}
